@@ -19,6 +19,7 @@ from google.cloud import bigquery as gcp_bigquery
 from sqlalchemy import Column, DateTime, String
 
 # How far back should we search for builds?
+# test
 DELTA_SEARCH = timedelta(days=180)
 # How long before cached Redis keys are cleared
 CACHE_EXPIRY = 60 * 60 * 24 * 7  # 1 week
