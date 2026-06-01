@@ -14,7 +14,7 @@ spec:
   runPolicy: Serial
   source:
     git:
-      uri: https://github.com/openshift-eng/art-dashboard-ui.git
+      uri: https://github.com/locriandev/art-dashboard-ui.git
       ref: art-build-failures
     type: Git
   strategy:
