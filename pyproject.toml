@@ -6,6 +6,8 @@ requires-python = ">=3.11"
 dependencies = [
     "flask>=3.0",
     "Flask[async]",
+    "gunicorn",
+    "redis",
     "rh-art-tools @ git+https://github.com/openshift-eng/art-tools.git@main",
 ]
 
