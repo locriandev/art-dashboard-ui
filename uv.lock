@@ -226,6 +226,8 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "flask", extra = ["async"] },
+    { name = "gunicorn" },
+    { name = "redis" },
     { name = "rh-art-tools" },
 ]
 
@@ -233,6 +235,8 @@ dependencies = [
 requires-dist = [
     { name = "flask", specifier = ">=3.0" },
     { name = "flask", extras = ["async"] },
+    { name = "gunicorn" },
+    { name = "redis" },
     { name = "rh-art-tools", git = "https://github.com/openshift-eng/art-tools.git?rev=main" },
 ]
 
@@ -1191,6 +1195,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/ca/77/f34fd81bbccf2e682073964a1b1b0a383e70d02946e472f78881d50cec6f/gssapi-1.11.1-cp314-cp314t-macosx_11_0_arm64.whl", hash = "sha256:cb0250f27d288d4217d7f606d3b68ecb9a10fce9391106129cada96434a685b0", size = 734103, upload-time = "2026-01-26T21:01:27.3Z" },
     { url = "https://files.pythonhosted.org/packages/b2/34/733a6f3372040992befd1fe62288cafea9fe25acdcf8b663ec8a7857cb69/gssapi-1.11.1-cp314-cp314t-win32.whl", hash = "sha256:b17875d236b8b030a777ee3f3ece55f3d316a91937c37abbc771afe1493703cf", size = 868586, upload-time = "2026-01-26T21:01:29.041Z" },
     { url = "https://files.pythonhosted.org/packages/10/03/1b71feddb85f945101c3cdc07242805c5e9b48da546f8a922129ad8299e5/gssapi-1.11.1-cp314-cp314t-win_amd64.whl", hash = "sha256:da43c0e0ae84bb9f04c4e016eac6d3826c6357f827183042ba990ccedeeab052", size = 981075, upload-time = "2026-01-26T21:01:30.451Z" },
+]
+
+[[package]]
+name = "gunicorn"
+version = "26.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "packaging" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/6d/b7/a4a3f632f823e432ce6bc65f62961b7980c898c77f075a2f7118cb3846fe/gunicorn-26.0.0.tar.gz", hash = "sha256:ca9346f85e3a4aeeb64d491045c16b9a35647abd37ea15efe53080eb8b090baf", size = 727286, upload-time = "2026-05-05T06:38:25.529Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e6/40/9c2384fc2be4ad25dd4a49decd5ad9ea5a3639814c11bd40ab77cb9f0a14/gunicorn-26.0.0-py3-none-any.whl", hash = "sha256:40233d26a5f0d1872916188c276e21641155111c2853f0c2cd55260aec0d24fc", size = 212009, upload-time = "2026-05-05T06:38:23.007Z" },
 ]
 
 [[package]]
