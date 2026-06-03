@@ -13,4 +13,6 @@ USER 1001
 
 EXPOSE 8080
 
-CMD [".venv/bin/gunicorn", "app:app", "--workers", "4", "--bind", "0.0.0.0:8080"]
+# Override the UBI Python entrypoint
+ENTRYPOINT []
+CMD ["/app/.venv/bin/gunicorn", "app:app", "--workers", "4", "--bind", "0.0.0.0:8080"]
